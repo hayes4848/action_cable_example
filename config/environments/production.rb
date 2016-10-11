@@ -1,6 +1,8 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  config.action_cable.allowed_request_origins = ['https://andy-action-cable-app.herokuapp.com', 'http://andy-action-cable-app.herokuapp.com']
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
